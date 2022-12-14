@@ -1,0 +1,124 @@
+@media only screen and (min-width:320px){
+    
+}
+@media only screen and (min-width: 1024px){
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap'); 
+
+html{
+    display: block;
+    height: 14200px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+body {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+#background{
+    background-image: url(img/01-bg-a.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1920px;
+    height: 14200px;
+}
+#top .logohotel {
+    position: relative;
+
+    margin-top: 20px;
+}
+.imghotel {
+    position: relative;
+    bottom: 40px;
+    margin-top: auto;
+
+}
+.hotel-name {
+    position: relative;
+    bottom: 800px;
+    margin-top: 0;
+}
+.titlehotel{
+    margin-top: 01;
+    position: relative;
+    padding-left: 200px;
+}
+.logohotel {
+    position: relative;
+    bottom: 1198px;
+    min-height: auto;
+    margin-top: 500px;
+    margin-bottom: 20px;
+    padding-left: 70px;
+    padding-right: 75px;
+    padding-bottom: 20px;
+}
+#navbar {
+    justify-content: flex-start;
+    text-align: center;
+}
+.navbar-a {
+    position: relative;
+    bottom: 2800px;
+    left: 30px;
+    right: 80px;
+
+}
+.navbar-b {
+    position: relative;
+    bottom: 2800px;
+    left: 60px;
+}
+.navbar-c {
+    position: relative;
+    bottom: 2800px;
+    left: 90px;
+}
+.navbar-d {
+    position: relative;
+    bottom: 2800px;
+    left: 115px;
+}
+.snowimg {
+    position:relative;
+    bottom: 1800px ;
+}
+.snowtext {
+    position: relative;
+    text-align: center;
+    font-weight: 600;
+    font-size: xx-large;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+    line-height: 1.75;
+    bottom: 660px;
+    text-decoration: none;
+    font-style: normal;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 40px;
+}
+.snowimg {
+    text-decoration: none;
+}
+.navbar-a img:hover {
+    transform: scale(5deg);
+    scale: 1,2;
+    transition: 0,5s;
+
+}
+.familybg{
+    position: relative;
+    bottom: 2300px;
+    left: 175px;
+}
+
+.familyphoto-a {
+    position: relative;
+
+}
