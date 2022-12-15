@@ -26,56 +26,121 @@
         </a>
     </div>
     <div id="snow">
-        <a class="snowimg" href="img/01-top-ca.png">
+        <a class="snowimg" href="">
             <img src="img/01-top-ca.png" alt="">
         <div class="snowtext">
-                <p>「宿泊者様専用」大浴場などの設備や充実したサービスで
-             <br>
+        <a class= "navbg" href=""> 
+            <img src="img/01-bg-navbar-a.png" alt="">
+        </a> 
+            <h3>
+                「宿泊者様専用」大浴場などの設備や充実したサービスで
+                <br>
                 ファミリーやグループでゆったりとお過ごしいただけます。
-                </p>
+            </h2>
         </a>
-    </div>
-    </div>
-    <div class="navbar">
-        <a class="navbar-a" href="#familyslide">
-            <img src="img/01-navbar-a.png" alt="">
-        </a>
-        <a class="navbar-b" href="#mamapapa">
-            <img src="img/01-navbar-b.png" alt="">
-        </a>
-        <a class="navbar-c" href="kamp">
-            <img src="img/01-navbar-c.png" alt="">
-        </a>
-        <a class="navbar-d" href="#buffet">
-            <img src="img/01-navbar-d.png" alt="">
-        </a>  
-        </div>
-    </div>     
-    <div id="menu-a">
-    <div id="familyslide">
-        <div class="photoslide-a">
-            <a class="photoslide">  
-                 <img src="img/asset/01_ファミリー.png" alt="">
+        <div class="navbar">
+            <a class="navbar-a" href="#familyslide">
+                <img src="img/01-navbar-a.png" alt="">
             </a>
-            <a href="">
-                <img src="" alt="">
+            <a class="navbar-b" href="#mamapapa">
+                <img src="img/01-navbar-b.png" alt="">
             </a>
-            <a class="familybg" href="img/02-famiri-bg.png">
-                <img src="img/02-famiri-bg.png" alt="">
+            <a class="navbar-c" href="kamp">
+                <img src="img/01-navbar-c.png" alt="">
             </a>
-            <a class="photo-a">
-                <img src="img/02-famiri-a.png" alt="">
+            <a class="navbar-d" href="#buffet">
+                <img src="img/01-navbar-d.png" alt="">
             </a>  
-                    
-
-                    </a>
-                     
-                </a>
-                    
-                </a>
             </div>
-
+            </div>
     </div>
+     <div>
+        <a class="familytitle">
+            <img src="img/02-famiri-a.png" alt="">
+        </a>  
+    </div>
+    <div class="container">
+        <div class="content-slide">
+            <div class="imgslide fade">
+                <div class="number-slide">1/5</div>
+                <div class="slidefamily">
+                    <img src="img/asset/01_ファミリー.png" alt="">
+                <div class="text">
+                大空リゾート®からは無料のシャトルバスによるアクセスも可能です。
+                <br>
+                ホテルに到着したらフロントでチェックインをお済ませ下さい。
+            </div>
+            <div class="imgslide fade">
+                <div class="number-slide">2/5</div>
+                 <img src="img/asset/02_ファミリー.png" alt="">
+                <div class="text">
+                客室は全室広々設計で、ファミリーやグループみんなでくつろげます。
+                <br>
+                また、全室がバス・トイレ別で、洗い場付きのお風呂はお子様がいるファミリーにご好評です。
+
+            </div>
+            <div class="imgslide fade">
+                <div class="number-slide">3/5</div>
+                 <img src="img/asset/03_ファミリー.png" alt="">
+                <div class="text">
+                館内には、お子様連れのご家族はもちろん、
+                <br>  
+                さまざまな年代の方が快適に過ごしていただける施設やサービスをご用意しています。
+            </div>
+            <div class="imgslide">
+                <div class="number-slide">4/5</div>
+                 <img src="img/asset/04_ファミリー.png" alt="">
+                <div class="text">
+                ホテルの目の前には市内唯一の総合公園「浦安市総合公園」があり、
+                <br>
+                海を眺めながら芝生の上で遊んだりくつろいだりできます
+            </div>
+            <div class="imgslide fade">
+                <div class="number-slide">5/5</div>
+                 <img src="img/asset/05_ファミリー.png" alt="">
+                <div class="text">
+                最上階の7階には、宿泊者限定でご利用できる大浴場を用意。
+                <br>
+                海を一望できる大浴場で、ご家族みんなで癒やされて下さい。
+                <br>
+                ※小学1年生以上の方は、男女別のご利用とさせていただきます。
+                </div>
+            </div>
+            <a class="prev" onclick="nextslide (-1)">&#10094;</a>       
+             <a class ="next" onclick="nextslide (1)">&#10095;</a>  
+                  
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showslide (slideIndex);
+
+        function nextslide (n) {
+            showslide (slideIndex +=n);
+        }
+
+        function showslide (n) {
+            var i ;
+            var slides = document.getElementsByClassName
+            ("imgslide");
+
+            if (n > slides.length ) {
+                slideIndex = 1
+            }
+            if (n<1) {
+                slideIndex =slides.length;
+            }
+            
+            for (i= 0; i <slides.length; i++){
+                slides[i].style.display ="none";
+            }
+
+            slides[slideIndex-1].style.display="block";
+            
+        }
+
+    </script>
 
     </div>
 
