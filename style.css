@@ -145,8 +145,8 @@ h3 {
     bottom: 5000px;
 }
 .slider {
-    width: 839px;
-    height: 673px;
+    width: 800px;
+    height: 500px;
     border-radius: 10px;
     overflow: hidden;
     
@@ -155,7 +155,6 @@ h3 {
     width: 500%;
     height: 500px;
     display: flex;
-    border-radius: 10px;
     
 }
 .slides input {
@@ -166,18 +165,19 @@ h3 {
     transition: 2s;
 }
 .slide　img {
-    width: 839px;
-    height: 673px;
+    width: 800px;
+    height: 500px;
 }
 .navigation-manual {
     position: absolute;
     width: 800px ;
     margin-top: -40px;
+    display: flex;
     justify-content: center;
 }
 .manual-btn {
-    border: 10px solid crimson ;
-    padding: 10px;
+    border: 2px solid crimson ;
+    padding: 5px;
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
@@ -192,16 +192,89 @@ h3 {
     margin-left: 0;
 }
 #radio2:checked ~ .first {
-    margin-left: 20%;
+    margin-left: -20%;
 }
 #radio3:checked ~ .first {
-    margin-left: 40%;
+    margin-left: -40%;
 }
 #radio4:checked ~ .first {
-    margin-left: 60%;
+    margin-left: -60%;
 }
 #radio5:checked ~ .first {
-    margin-left: 80%;
+    margin-left: -80%;
+}
+.slider {
+    position: relative;
+    bottom: 4900px;
+    left: 550px;
+}
+
+.slidertext {
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+.slidestext {
+    width: 500%;
+    height: 500px;
+    display: flex;
+    
+}
+.slidestext input {
+    display: none;
+}
+.slidestext {
+    width: 20%;
+    transition: 2s;
+}
+.slide　img {
+    width: 800px;
+    height: 500px;
+}
+.navigation-manual {
+    position: absolute;
+    width: 800px ;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manual-text {
+    border: 2px solid crimson ;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.slides input {
+    display: none;
+}
+.manual-text:not(:last-child) {
+    margin-right: 40px;    
+}
+.manual-text:hover {
+    background: #ce9b0e;
+}
+#text1:checked ~ .first {
+    margin-left: 0;
+}
+#text2:checked ~ .first {
+    margin-left: -20%;
+}
+#text3:checked ~ .first {
+    margin-left: -40%;
+}
+#text4:checked ~ .first {
+    margin-left: -60%;
+}
+#text5:checked ~ .first {
+    margin-left: -80%;
+}
+.slidertext {
+    position: relative;
+    bottom: 4900px;
+    left: 550px;
 }
 .prev,
 .next {
