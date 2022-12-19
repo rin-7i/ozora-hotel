@@ -16,6 +16,8 @@ html{
     box-sizing: border-box;
 }
 body {
+    margin: 0;
+    padding: 0;
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
@@ -136,16 +138,70 @@ h3 {
     position: relative;
     bottom: 2300px;
     left: 160px;
+    background-image: cover;
 }
 .familytitle {
     position: relative;
     bottom: 5000px;
 }
-.imgslide1, .imgslide2, .imgslide3, .imgslide4, .imgslide5 {
-    position: relative;
-    bottom: 5000px;
-    left: 510px;
-    display: block;
+.slider {
+    width: 839px;
+    height: 673px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+    border-radius: 10px;
+    
+}
+.slides input {
+    display: none;
+}
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+.slide　img {
+    width: 839px;
+    height: 673px;
+}
+.navigation-manual {
+    position: absolute;
+    width: 800px ;
+    margin-top: -40px;
+    justify-content: center;
+}
+.manual-btn {
+    border: 10px solid crimson ;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child) {
+    margin-right: 40px;    
+}
+.manual-btn:hover {
+    background: #ce9b0e;
+}
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+#radio2:checked ~ .first {
+    margin-left: 20%;
+}
+#radio3:checked ~ .first {
+    margin-left: 40%;
+}
+#radio4:checked ~ .first {
+    margin-left: 60%;
+}
+#radio5:checked ~ .first {
+    margin-left: 80%;
 }
 .prev,
 .next {
@@ -191,9 +247,118 @@ h3 {
 .familyslide {
     max-width: auto;
     position: relative;
+    
 }
 
 .plankfamily-a {
     position: relative;
-    bottom: 8000px;
+    
+}
+.familya {
+    bottom: 0;
+    left: 0;
+}
+.familyslide {
+    bottom: 30px;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+}
+.slide-card  {
+    width: 100%;
+    height: 100%;
+    position:relative;
+}
+.familya {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    justify-content: space-between;
+    
+
+}
+.slidefamily {
+    margin-top: 45px;
+    justify-content: space-between;
+    position: relative; 
+    top: 0;
+    right: auto;
+}
+
+.textfamily1 {
+    text-align: center;
+    position: relative;
+    bottom: 5600px;
+    
+}
+
+.bgmamapapa {
+    position: relative;
+    top: 540px;
+}
+.familyslide { 
+    position: relative;
+	overflow: hidden; 
+    margin:20px auto;
+	width: 768px;
+	height: auto; 
+    position: relative;
+    top: -5100px;
+    justify-content: flex-end;
+    display: flex;
+
+}
+
+.familya :after {
+    font-size: xx-large;
+    position: relative;
+    bottom: 4000px;
+	z-index: 12; 
+	color: rgba(255,255,255, 0); 
+	left: 300px; top: 80px; 
+	-webkit-transition: 1s all ease-in-out; 
+	-moz-transition: 1s all ease-in-out; 
+	transition: 1s all ease-in-out; 
+}
+.plankfamily-a {
+    position: relative;
+    bottom: 4300px;
+    text-align: center;
+}
+.planktext-a {
+    position: relative;
+    bottom: 300px;
+    font-size: xx-large;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: aliceblue;
+    font-weight: 500;
+    font-display: block;
+    text-align: center;
+}
+.plankbutton-a {
+    position: relative;
+    bottom: 250px;
+    text-align: center;
+}
+.plankfamily-b {
+    position: relative;
+    bottom: 200px;
+    text-align: center;
+    
+}
+.planktext-b {
+    position: relative;
+    bottom: 300px;
+    font-size: xx-large;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: aliceblue;
+    font-weight: 500;
+    font-display: block;
+    text-align: center;
+}
+.plankbutton-b {
+    position: relative;
+    bottom: 450px;
+    text-align: center;
 }
