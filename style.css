@@ -335,10 +335,13 @@ h3 {
     text-align: center;
     
 }
-.mamapapaplank {
+.h2 {
+    text-align: center;
+}
+.mamapapaplank  {
     position: relative;
     top: 500px;
-    left: 345px;
+    left: 345px;   
 }
 .familyslide { 
     position: relative;
