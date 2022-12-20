@@ -315,7 +315,30 @@ h3 {
 
 .bgmamapapa {
     position: relative;
-    top: 540px;
+    bottom: 4500px;
+    position: relative;
+    left: 160px;
+    background-image: cover;
+}
+.mamapapatitle {
+    position: relative;
+    bottom: 2800px;
+    right: 160px;
+}
+.mamapapakolase {
+    position: relative;
+    display: flex;
+}
+.mamapapatext {
+    position: relative;
+    top: 300px;
+    text-align: center;
+    
+}
+.mamapapaplank {
+    position: relative;
+    top: 500px;
+    left: 345px;
 }
 .familyslide { 
     position: relative;
